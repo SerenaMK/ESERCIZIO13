@@ -8,7 +8,7 @@ body {
 }
 
 div {
-    margin: 2em;
+    margin: 2em 2em 0;
     display: inline-block;
     border-bottom: 3px dashed antiquewhite;
     padding-bottom: 2em;
@@ -19,6 +19,7 @@ div:first-of-type {
 }
 
 div:last-of-type {
+    margin: 2em;
     border-bottom: none;
 }
 
@@ -44,4 +45,12 @@ span {
 #saluti {
     font-size: 3em;
     margin: 0;
+}
+
+a {
+    font-size: 1.5em;
+    color: antiquewhite;
+    background-color: darkslateblue;
+    padding: 0.5em 1em;
+    text-decoration: none;
 }

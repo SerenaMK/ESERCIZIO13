@@ -15,13 +15,12 @@ document.getElementById("dataOggi").innerHTML += `<span>${data.getDate()}-${data
 
 
 // SALUTO
-let saluti = ["Buongiorno", "Buon pomeriggio", "Buonasera"];
 let ora = data.getHours();
 
 if (ora < 12) {
     document.getElementById("saluti").innerHTML = `<span>Buongiorno! Sono le ${data.getHours()}:${data.getMinutes()}.</span>`;
 }
-else if (ora > 12 && ora < 18) {
+else if (ora < 18) {
     document.getElementById("saluti").innerHTML = `<span>Buon pomeriggio! Sono le ${data.getHours()}:${data.getMinutes()}.</span>`;
 }
 else {
